@@ -16,8 +16,8 @@ $("#currentDay").prepend(timeNow);
 
 $("#Save").on("click", function (event) {
     event.preventDefault(event)
-    var eventType = $(this).siblings("#eventList").val() // We are grabbing the <input> element closest to the Save button we clicked!
-    var time = $(this).parent().attr("id");
+    var value = $(this).siblings("#eventList").val() // We are grabbing the <input> element closest to the Save button we clicked!
+    var time = $(this).parent().attr("#id");
     localStorage.setItem(time, value);
 
 });
